@@ -10,7 +10,7 @@ Steps:
 2. product card
 3. connect product info with json file
 4. product page
-5. connected product info in product page with json file
+5. connect product info in product page with json file
 5. use params to get the id on pressed product to get the correct product information
 6. some media queries
 
