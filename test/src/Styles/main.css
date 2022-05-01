@@ -47,6 +47,15 @@
   background-color: black;
   color: white;
   outline: none;
+  transition-duration: 0.3s;
+}
+
+.product-info-card button:hover {
+  background-color: #35c092;
+}
+
+.product-info-card button:focus {
+  background-color: #35c092;
 }
 
 @media only screen and (max-width: 1000px) {

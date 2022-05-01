@@ -46,9 +46,20 @@
             background-color: black;
             color: white;
             outline: none;
+            transition-duration: 0.3s;
         }
     }
+
+    button:hover {
+        background-color: #35c092;
+    }
+
+    button:focus {
+        background-color: #35c092;
+    }
 }
+
+
 
 @media only screen and (max-width: 1000px) {
 
