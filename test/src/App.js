@@ -2,7 +2,7 @@ import React from 'react';
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
-import ProductPage from './Pages/ProductPage';
+import InfoPage from './Pages/InfoPage';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product/:id" element={<ProductPage />} />
+        <Route path="/product/" element={<InfoPage />} />
       </Routes>
     </Router>
   )

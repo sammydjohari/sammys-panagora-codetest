@@ -6,7 +6,7 @@ function Products() {
    console.log('products:', products)
 
   return (
-    <div className='Items'>
+    <div className='items'>
     <section className='item-card'>
         {products.map((product) => 
         <>

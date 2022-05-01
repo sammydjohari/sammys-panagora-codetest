@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 function Navbar() {
   return (
@@ -5,7 +6,7 @@ function Navbar() {
       <img src="./static/panagora-logo.svg" alt="panagora logo"></img>
       <div className="menu-items">
           <ul>
-              <li>Products</li>
+            <Link to="/" className="active">Products</Link>
               <li>About</li>
           </ul>
       </div>

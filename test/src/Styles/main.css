@@ -1,3 +1,67 @@
+.product-info-card {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+  justify-content: space-around;
+}
+
+.product-info-card img {
+  width: 40vw;
+  height: 70vh;
+}
+
+.product-info-card .info-text {
+  width: 50vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product-info-card .info-text .info-name {
+  font-size: 35px;
+  margin-bottom: 5%;
+  font-weight: normal;
+}
+
+.product-info-card .info-text .info-price {
+  font-size: 32px;
+  margin-bottom: 10%;
+  font-weight: normal;
+}
+
+.product-info-card .info-text .info-desc {
+  font-size: 24px;
+  margin-bottom: 10%;
+  font-weight: lighter;
+}
+
+.product-info-card .info-text button {
+  padding: 2rem;
+  width: 100%;
+  font-size: larger;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .product-info-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-info-card img {
+    max-width: 50vw;
+  }
+  .product-info-card .info-text {
+    width: 40vw;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,14 +98,25 @@ nav .menu-items ul {
   justify-content: space-between;
 }
 
+nav .menu-items li {
+  cursor: pointer;
+}
+
+nav .menu-items .active {
+  border-bottom: 2px solid black;
+  text-decoration: none;
+  color: inherit;
+}
+
 .item-card {
   height: 90%;
   width: 100%;
-  padding: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  overflow-x: hidden;
+  padding: 2rem;
 }
 
 .card {
@@ -55,6 +130,11 @@ nav .menu-items ul {
   padding-bottom: 1rem;
 }
 
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card img {
   cursor: pointer;
 }
@@ -62,5 +142,46 @@ nav .menu-items ul {
 .card .card-name {
   font-weight: bold;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1150px) {
+  .card {
+    width: 30%;
+    height: auto;
+  }
+  .item-card {
+    justify-content: space-evenly;
+  }
+  nav .menu-items ul {
+    width: 50%;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+    width: 40%;
+    height: auto;
+  }
+  .item-card {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 80%;
+    height: auto;
+    align-items: center;
+  }
+  nav img {
+    min-width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav img {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
