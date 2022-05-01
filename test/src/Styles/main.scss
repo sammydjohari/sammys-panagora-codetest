@@ -49,17 +49,22 @@ nav {
 
 }
 
+.items {
+    height: auto;
+    width: 100%;
+}
+
 
 
 .item-card {
     height: 90%;
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: space-around;
     overflow-x: hidden;
-    padding: 2rem;
+    padding:2rem;
+    padding-right: 0;
 }
 
 .card {

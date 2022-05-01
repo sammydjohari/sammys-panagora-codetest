@@ -7,14 +7,13 @@ import InfoPage from './Pages/InfoPage';
 
 function App() {
 
-  
 
   return (
     <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/product/" element={<InfoPage />} />
+        <Route path="/product/:id" element={<InfoPage />} />
       </Routes>
     </Router>
   )

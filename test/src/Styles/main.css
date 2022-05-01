@@ -55,10 +55,32 @@
     align-items: center;
   }
   .product-info-card img {
-    max-width: 50vw;
+    height: auto;
+    width: 70%;
   }
   .product-info-card .info-text {
-    width: 40vw;
+    width: 70%;
+    height: auto;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+  .product-info-card .info-text .info-name {
+    font-size: 20px;
+  }
+  .product-info-card .info-text .info-price {
+    font-size: 18px;
+  }
+  .product-info-card .info-text .info-desc {
+    font-size: 15px;
+    height: 20px;
+    width: 30%;
+    line-height: 20px;
+  }
+  .product-info-card .info-text button {
+    max-width: 15%;
+    padding: 0.5rem;
   }
 }
 
@@ -108,15 +130,20 @@ nav .menu-items .active {
   color: inherit;
 }
 
+.items {
+  height: auto;
+  width: 100%;
+}
+
 .item-card {
   height: 90%;
-  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   overflow-x: hidden;
   padding: 2rem;
+  padding-right: 0;
 }
 
 .card {

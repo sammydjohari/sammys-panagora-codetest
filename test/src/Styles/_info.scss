@@ -57,12 +57,38 @@
         align-items: center;
 
         img {
-            max-width: 50vw;
+            height: auto;
+            width: 70%;
 
         }
 
         .info-text {
-            width: 40vw;
+            width: 70%;
+            height: auto;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: 10px;
+            justify-content: space-evenly;
+
+            .info-name {
+                font-size: 20px;
+            }
+
+            .info-price {
+                font-size: 18px;
+            }
+
+            .info-desc {
+                font-size: 15px;
+                height: 20px;
+                width: 30%;
+                line-height: 20px
+            }
+
+            button {
+                max-width: 15%;
+                padding: 0.5rem;
+            }
         }
     }
 }
